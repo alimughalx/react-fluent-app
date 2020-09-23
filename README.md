@@ -1,4 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You need to update config constant object property "WpUser" WordPress UserName & Password / you can pass that info directly to paramters in WPAuthProvider
+<br />
+
+In order to you use MSAL, Please Add App Registration ID of Azure AAD app to Config property "appId"
 
 ## Available Scripts
 
