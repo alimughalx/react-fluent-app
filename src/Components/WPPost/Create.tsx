@@ -3,7 +3,7 @@ import { WpPosts, WpPostsCreateModel } from '../../Modals/WpPost';
 import withAuthProvider, { AuthComponentProps } from '../../Authentication/WpAuthProvider';
 import MetaInfo from '../../Components/MetaInfo';
 import { RoutesConfig } from '../../Helpers/routes.config';
-import { Stack, SpinnerSize, Spinner, IStackItemStyles, DefaultPalette, PrimaryButton, TextField,Label } from "@fluentui/react";
+import { Stack, SpinnerSize, Spinner, IStackItemStyles, PrimaryButton, TextField,Label } from "@fluentui/react";
 import { createPost } from '../../Services/WPService';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';

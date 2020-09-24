@@ -1,5 +1,3 @@
-import React from 'react';
-import { Icon } from "@fluentui/react";
 
 export type MetaInfoProps = {
   readonly title?: string;

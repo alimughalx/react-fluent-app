@@ -3,12 +3,13 @@
 import React from 'react';
 import { WpPosts } from '../../Modals/WpPost';
 import withAuthProvider, { AuthComponentProps } from '../../Authentication/WpAuthProvider';
-import { Stack, SpinnerSize, Spinner, IStackItemStyles, Label, Link, ActivityItem, Icon, mergeStyleSets, Text, DefaultPalette } from "@fluentui/react";
+import { Stack, SpinnerSize, Spinner, IStackItemStyles, Label, Link, ActivityItem, Icon, mergeStyleSets, Text } from "@fluentui/react";
 import { getWPSinglePost, getWPSinglePostComments } from '../../Services/WPService';
 import parse from 'html-react-parser'
 import { WpPostCommentsModel } from '../../Modals/WpComment';
 import MetaInfo from '../../Components/MetaInfo';
 import { RoutesConfig } from '../../Helpers/routes.config';
+import { array } from 'prop-types';
 interface WpPostState {
   loading: boolean,
   post: WpPosts | null,
@@ -92,7 +93,7 @@ class PostDetails extends React.Component<AuthComponentProps, WpPostState>{
             loading: false,
             comments: res
           });
-          let itemsArray = new Array();
+          let itemsArray:any = [];
           res.forEach(element => {
             itemsArray.push({
               key: element.id,

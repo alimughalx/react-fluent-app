@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-import React, { Component, CSSProperties } from 'react';
+import React, { Component } from 'react';
 import { Route, Redirect, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import withAuthProvider, { AuthComponentProps } from './Authentication/WpAuthProvider';
