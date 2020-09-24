@@ -9,7 +9,6 @@ import parse from 'html-react-parser'
 import { WpPostCommentsModel } from '../../Modals/WpComment';
 import MetaInfo from '../../Components/MetaInfo';
 import { RoutesConfig } from '../../Helpers/routes.config';
-import { array } from 'prop-types';
 interface WpPostState {
   loading: boolean,
   post: WpPosts | null,

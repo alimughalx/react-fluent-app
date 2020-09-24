@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
-
 // <NavBarSnippet>
 import React from 'react';
 import { NavLink as RouterNavLink } from 'react-router-dom';
@@ -48,6 +45,7 @@ function AuthNavItem(props: NavBarProps) {
   // sign out button
   const onRenderFooterContent = React.useCallback(
     () => (
+      
       <div>
         <PrimaryButton onClick={props.authButtonMethod} styles={buttonStyles}>
           Sign Out
@@ -55,9 +53,9 @@ function AuthNavItem(props: NavBarProps) {
         <DefaultButton onClick={dismissPanel}>Cancel</DefaultButton>
       </div>
     ),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [dismissPanel],
   );
-
   if (props.isAuthenticated) {
     const navPersonaStyles: Partial<IPersonaStyles> = { root: { margin: '0 0 10px 0', color: '#fff', cursor: 'pointer' }, primaryText: { color: DefaultPalette.white } };
     return (

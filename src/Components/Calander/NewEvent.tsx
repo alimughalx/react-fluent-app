@@ -4,7 +4,8 @@
 // <NewEventSnippet>
 import React from 'react';
 import { NavLink as RouterNavLink, Redirect } from 'react-router-dom';
-import { Button, Col, Form, FormGroup, Label, Input, Row } from 'reactstrap';
+import { PrimaryButton } from "@fluentui/react";
+import { Col, Form, FormGroup, Label, Input, Row } from 'reactstrap';
 import { Attendee, Event } from 'microsoft-graph';
 import { config } from '../../Helpers/Config';
 import withAuthProvider, { AuthComponentProps } from '../../Authentication/AuthProvider';
@@ -166,10 +167,7 @@ class NewEvent extends React.Component<AuthComponentProps, NewEventState> {
             value={this.state.body}
             onChange={this.handleUpdate} />
         </FormGroup>
-        <Button color="primary"
-          className="mr-2"
-          disabled={this.isFormDisabled()}
-          onClick={this.createEvent}>Create</Button>
+        <PrimaryButton title="Create" value="Create" disabled={this.isFormDisabled()} onClick={this.createEvent}/>
         <RouterNavLink to="/calendar" className="btn btn-secondary" exact>Cancel</RouterNavLink>
       </Form>
     )
