@@ -1,0 +1,21 @@
+body {
+  margin-top: 55px !important;
+}
+
+.alert-pre {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+button:focus {
+  outline: 0px !important;
+}
+.LoginBtn{
+  color: #ffffff;
+}
+.centeredIcon-85{
+  color: rgb(0, 120, 212);
+} 
+.initials-94 {
+  background-color: rgb(0, 120, 212);
+}
