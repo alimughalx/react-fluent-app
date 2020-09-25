@@ -1,5 +1,8 @@
 {
+<<<<<<< HEAD
   "homepage": "https://learn.wpintegrate.net/gittest1/",
+=======
+>>>>>>> 6e325fb8bb948290b8590ac6fcf6d74bc0509fd7
   "name": "react-fluent-app",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +27,10 @@
     "@uifabric/react-cards": "^0.112.13",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
+<<<<<<< HEAD
     "dotenv": "^8.2.0",
+=======
+>>>>>>> 6e325fb8bb948290b8590ac6fcf6d74bc0509fd7
     "html-react-parser": "^0.14.0",
     "moment": "^2.27.0",
     "moment-timezone": "^0.5.31",
